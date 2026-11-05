@@ -1,4 +1,4 @@
-# Project A — Layout & Table Analysis for Building Drawings
+# Layout & Table Analysis for Building Drawings
 
 First stage of an asbestos-containing-material (ACM) screening pipeline:
 
