@@ -74,6 +74,19 @@ def render_page(page: fitz.Page, dpi: int) -> np.ndarray:
     return np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width, 3).copy()
 
 
+def words_to_pixels(page: fitz.Page, raw_words: list, dpi: int) -> list[Word]:
+    """Convert PyMuPDF word tuples (PDF points) to :class:`Word` in rendered-image pixels.
+
+    Text extraction returns unrotated-page coordinates; the pixmap respects /Rotate.
+    """
+    m = page.rotation_matrix * fitz.Matrix(dpi / 72.0, dpi / 72.0)
+    words: list[Word] = []
+    for w in raw_words:
+        r = (fitz.Rect(w[:4]) * m).normalize()
+        words.append(Word(w[4], (r.x0, r.y0, r.x1, r.y1), int(w[5]), int(w[6])))
+    return words
+
+
 def _iter_pdf(path: Path, cfg: PipelineConfig) -> Iterator[PageData]:
     with fitz.open(path) as doc:
         for page in doc:
@@ -89,14 +102,7 @@ def _iter_pdf(path: Path, cfg: PipelineConfig) -> Iterator[PageData]:
             image = render_page(page, dpi)
             t_render = time.perf_counter() - t1
 
-            words: list[Word] = []
-            if decision.route is Route.VECTOR:
-                # Text extraction returns unrotated-page coordinates; the pixmap respects /Rotate.
-                m = page.rotation_matrix * fitz.Matrix(dpi / 72.0, dpi / 72.0)
-                words = []
-                for w in raw_words:
-                    r = (fitz.Rect(w[:4]) * m).normalize()
-                    words.append(Word(w[4], (r.x0, r.y0, r.x1, r.y1), int(w[5]), int(w[6])))
+            words = words_to_pixels(page, raw_words, dpi) if decision.route is Route.VECTOR else []
             yield PageData(
                 page=page.number + 1,
                 route=decision.route,

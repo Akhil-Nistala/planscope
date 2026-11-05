@@ -1,0 +1,37 @@
+# Synthetic training-data generator (Milestone 2).
+#   python -m data_gen.generate --config configs/synth.yaml --out data/synth
+# Probabilities in a mapping are normalised, so they need not sum to 1.
+
+seed: 1234
+n_sheets: 3000
+workers: 0                     # 0 -> os.cpu_count() - 1
+splits: { train: 0.8, val: 0.1, test: 0.1 }   # assigned per sheet from the seed
+
+# How each sheet reaches the detector:
+#   vector   -- digital PDF with a text layer (router -> VECTOR); GT carries the text-layer words
+#   scan     -- the same kind of sheet printed and scanned: skewed, blurred, noisy JPEG (image input)
+#   outlined -- CAD export with glyphs converted to paths, only the sheet number left as text (router -> RASTER)
+modes: { vector: 0.5, scan: 0.3, outlined: 0.2 }
+
+# Resolution of the stored training image and of all GT coordinates (pixels at this DPI).
+# vector matches render.vector_dpi in inference.yaml, so vector GT is exactly the pipeline's frame.
+dpi: { vector: 150, scan: 200, outlined: 200 }
+
+langs: { ja: 0.7, en: 0.3 }
+sheet_sizes: { A3: 0.55, A2: 0.25, A1: 0.20 }   # landscape; text size does not scale with the sheet
+layouts: { plan_side: 0.5, schedule_sheet: 0.25, plan_only: 0.25 }
+title_block_styles: { box: 0.7, strip: 0.3 }
+
+text_size_pt: [5.5, 9.0]       # base text height for a sheet, drawn uniformly
+
+# Orientation of leader callouts on plans.
+callout_angles: { horizontal: 0.7, vertical: 0.15, oblique: 0.15 }
+oblique_range_deg: [10, 60]    # magnitude; sign is random
+
+scan:
+  skew_deg: 1.0                # max |rotation|
+  jpeg_quality: [45, 85]
+  noise_sigma: [3.0, 12.0]
+  blur_prob: 0.7
+
+save_pdf: false                # true keeps the source PDF of vector/outlined sheets (router evaluation; ~+25% disk)

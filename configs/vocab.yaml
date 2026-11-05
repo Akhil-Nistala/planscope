@@ -36,3 +36,90 @@ notes:
     - Test floor levelling compound under vinyl tiles prior to removal.
     - Sprayed coatings in plant room to be handled per pre-demolition analysis.
     - All dimensions in millimetres.
+
+# ---------------------------------------------------------------------------
+# Milestone 2 (data_gen/) -- everything below is only used by the synthetic generator.
+# ---------------------------------------------------------------------------
+
+# Header spellings seen on real schedules, keyed by canonical field. The canonical key is
+# what ends up in `canonical_headers`; the generator picks one spelling per table.
+header_variants:
+  ja:
+    level: [階, 階数]
+    room: [室名, 部屋名, 室 名]
+    floor: [床, 床仕上, 床仕上げ]
+    baseboard: [幅木, 巾木]
+    wall: [壁, 壁仕上, 壁仕上げ]
+    ceiling: [天井, 天井仕上, 天井仕上げ]
+    remarks: [備考, 摘要]
+  en:
+    level: [Level, Floor Level]
+    room: [Room, Room Name, Space]
+    floor: [Floor, Floor Finish, FLR]
+    baseboard: [Baseboard, Skirting, Base]
+    wall: [Wall, Wall Finish, WALL]
+    ceiling: [Ceiling, Ceiling Finish, CLG]
+    remarks: [Remarks, Notes]
+
+levels:
+  ja: [B1階, 1階, 2階, 3階, 4階, 5階, RF]
+  en: [B1, L1, L2, L3, L4, L5, Roof]
+
+remarks:
+  ja: ["", "", "", 既存, 改修, 新設, 既存のまま, "CH=2600", "CH=2400", 要分析, -]
+  en: ["", "", "", existing, refurbished, new, retain, "CH=2600", "CH=2400", sample req., "-"]
+
+schedule_titles:
+  ja: [仕上表, 内部仕上表, 室内仕上表, 内部仕上げ表, 既存仕上表]
+  en: [FINISH SCHEDULE, ROOM FINISH SCHEDULE, INTERNAL FINISHES, SCHEDULE OF FINISHES]
+
+notes_headings:
+  ja: [特記仕様書, 特記事項, 一般事項, 注記, 石綿含有建材に関する特記]
+  en: [GENERAL NOTES, NOTES, SPECIFICATION NOTES, ASBESTOS NOTES]
+
+# {floor} {baseboard} {wall} {ceiling} {room} {n} are filled from the lists above.
+note_templates:
+  ja:
+    - "{room}の{ceiling}は撤去前に石綿含有の有無を確認すること。"
+    - "既存{floor}の下地調整材は分析を行い、結果に応じて処理すること。"
+    - "{wall}の改修範囲は別途協議とする。"
+    - "解体時は飛散防止措置を講じ、関係法令に従い処理すること。"
+    - "{room}の既存{baseboard}は撤去し、新規に取り替えること。"
+    - "事前調査結果は報告書No.{n}による。"
+    - "仕上げ材の品番・色番は監督員と協議の上決定する。"
+  en:
+    - "Confirm asbestos content of existing {ceiling} in {room} before removal."
+    - "Sample levelling compound under existing {floor} prior to stripping."
+    - "Extent of {wall} works to be agreed on site."
+    - "Removal to follow dust suppression and statutory disposal procedures."
+    - "Replace existing {baseboard} in {room} throughout."
+    - "Refer to pre-demolition survey report No. {n}."
+    - "Colours and product codes to be confirmed by the contract administrator."
+
+# Leader callouts placed on floor plans.
+callout_templates:
+  ja: ["天井: {ceiling}", "床: {floor}", "壁: {wall}", "既存{ceiling} 撤去", "石綿調査箇所 No.{n}", "既存{floor} 撤去", "{wall} 新設", "吹付け材 要分析"]
+  en: ["CLG: {ceiling}", "FLR: {floor}", "WALL: {wall}", "Remove existing {ceiling}", "Survey point No.{n}", "Strip existing {floor}", "New {wall}", "Sprayed coating - sample"]
+
+legend_headings:
+  ja: [凡例, 凡 例, 記号凡例]
+  en: [LEGEND, KEY, SYMBOLS]
+
+legend_labels:
+  ja: [石綿含有調査箇所, 撤去範囲, 既存壁, 新設壁, 改修範囲, 分析試料採取位置, 立入禁止区域, 既存天井撤去範囲, 養生範囲]
+  en: [survey location, removal area, existing wall, new wall, refurbishment area, sample location, restricted zone, ceiling removal area, protection area]
+
+title_block:
+  ja:
+    labels: { project: 工事名称, title: 図面名称, scale: 縮尺, date: 日付, number: 図面番号, firm: 設計, drawn: 製図, checked: 承認 }
+    projects: [○○ビル改修工事, 市民会館耐震改修工事, 第二庁舎内装改修工事, 本社ビル解体工事, 小学校校舎改修工事, 旧工場棟解体工事]
+    titles: [仕上表, 1階平面図, 2階平面図, 仕上表・平面図, 内部仕上表, 天井伏図, 特記仕様書]
+    firms: [△△設計事務所, 株式会社○○建築設計, □□建設 設計部, ◇◇アーキテクツ]
+    people: [山田, 佐藤, 鈴木, 高橋, 田中, 渡辺]
+  en:
+    labels: { project: PROJECT, title: TITLE, scale: SCALE, date: DATE, number: DWG No., firm: ARCHITECT, drawn: DRAWN, checked: CHECKED }
+    projects: [Office Refurbishment, Civic Hall Seismic Upgrade, Annex Interior Fit-out, Head Office Demolition, Primary School Renovation, Old Works Demolition]
+    titles: [Finish Schedule, Level 1 Plan, Level 2 Plan, Finish Schedule / Plan, Internal Finishes, Reflected Ceiling Plan, General Notes]
+    firms: [Example Studio, North Architects, Field & Co. Design, Bridge Partners]
+    people: [AB, CD, EF, GH, JK, LM]
+  scales: ["1/50", "1/100", "1/200", "NTS", "1:50", "1:100"]
