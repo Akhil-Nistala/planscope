@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.org/project-a/drawing-layout.schema.json",
-  "title": "Drawing layout & table analysis output (Project A)",
-  "description": "Per-document output consumed by Project B (OCR) and Project C (asbestos material matching). All coordinates are pixels of the rendered page image (origin top-left, x right, y down) at the page's `dpi`.",
+  "$id": "https://example.org/planscope/drawing-layout.schema.json",
+  "title": "PlanScope output: drawing layout & table analysis",
+  "description": "Per-document output consumed by PlanRead (OCR) and the downstream asbestos-material matcher. All coordinates are pixels of the rendered page image (origin top-left, x right, y down) at the page's `dpi`.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "document", "pages"],

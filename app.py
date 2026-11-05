@@ -70,7 +70,7 @@ def run(path_str: str, min_words: int, min_ratio: float, _mtime: float) -> tuple
 
 
 ensure_samples()
-st.title("Drawing Layout & Table Analysis — Project A")
+st.title("PlanScope — drawing layout & table analysis")
 st.caption("Stage 1 of an asbestos-material screening pipeline: find where material information lives on a "
            "drawing and emit structured JSON. **Milestone 1:** input router, rendering, output schema. "
            "Layout detection (YOLO11-OBB) and table structure arrive in later milestones — regions are empty for now.")

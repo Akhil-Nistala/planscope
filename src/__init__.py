@@ -1,1 +1,1 @@
-"""Project A: layout & table analysis for building drawings."""
+"""PlanScope: layout & table analysis for building drawings."""

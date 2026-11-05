@@ -1,16 +1,16 @@
-# Layout & Table Analysis for Building Drawings
+# PlanScope — Layout & Table Analysis for Building Drawings
 
 First stage of an asbestos-containing-material (ACM) screening pipeline:
 
 ```
-drawing PDF/image ──► [A] router ─► render ─► layout detector ─► table structure ─► JSON ──► [B] OCR ──► [C] ACM matching
-                         │ vector: text from PDF layer ─────────────────────────────┘ (no OCR needed)
-                         └ raster: text flagged needs_ocr ──────────────────────────► Project B
+drawing PDF/image ──► PlanScope: router ─► render ─► layout detector ─► table structure ─► JSON ──► PlanRead (OCR) ──► ACM matching
+                                │ vector: text from PDF layer ────────────────────────────────┘ (no OCR needed)
+                                └ raster: text flagged needs_ocr ─────────────────────────────► PlanRead
 ```
 
-Project A does **not** decide whether anything contains asbestos — it only locates where material
+PlanScope does **not** decide whether anything contains asbestos — it only locates where material
 information lives (finish schedules 仕上表, notes 特記仕様書, title blocks, legends, callouts) and
-turns it into structured, schema-validated JSON. The determination is made from text downstream (Project C).
+turns it into structured, schema-validated JSON. The determination is made from text further downstream.
 
 ## Status
 
