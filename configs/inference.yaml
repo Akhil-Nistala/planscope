@@ -1,0 +1,22 @@
+# Inference configuration for the PDF -> JSON pipeline.
+# All paths are relative to the repo root unless absolute.
+
+seed: 42
+
+router:
+  # A page is VECTOR only if its text layer passes ALL of these checks.
+  min_words: 15               # fewer words than this -> RASTER (scan, or CAD export with text as paths)
+  min_valid_char_ratio: 0.85  # share of characters that are "real" text (see src/router.py::is_valid_char)
+  min_text_coverage: 0.0      # optional: min fraction of page area covered by word boxes (0 disables)
+
+render:
+  dpi: 300                    # render DPI for RASTER pages (OCR needs ~300)
+  vector_dpi: 150             # render DPI for VECTOR pages (layout detection only; text comes from the PDF)
+  max_pixels: 120_000_000     # safety cap; DPI is lowered for very large sheets (A0 @300dpi ~ 140 MP)
+
+images:
+  # DPI assumed for plain image inputs (PNG/JPG/TIFF) when the file carries no DPI metadata.
+  default_dpi: null           # null -> output "dpi": null in JSON
+
+detector:
+  kind: "null"                # "null" until Milestone 3 (YOLO11-OBB). Produces no regions.

@@ -1,0 +1,9 @@
+# Milestone 1 (router, rendering, schema, demo). Training deps (ultralytics, sahi, torch) are added in M3.
+pymupdf==2.1
+numpy==2.5.4
+pillow==13.0.0
+opencv-python-headless==5.0.0.93
+PyYAML==6.0.3
+jsonschema==4.26.0
+pytest==9.2.0
+streamlit==1.66.1

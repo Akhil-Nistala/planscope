@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+outputs/
+runs/
+wandb/
+data/samples/
+data/synth/
+data/real/
+*.pt
+*.onnx
