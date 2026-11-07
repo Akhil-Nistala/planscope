@@ -1,0 +1,641 @@
+{
+ "input": "raw/jp_env_kokyogaien_gosui_jokashisetsu_kaishu_p05.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2482,
+ "height": 1755,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "title_block",
+   "box": [
+    2111,
+    1588,
+    2440,
+    1709
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    205,
+    1249,
+    523,
+    1429
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    205,
+    1485,
+    404,
+    1599
+   ]
+  },
+  {
+   "class": "legend",
+   "box": [
+    1922,
+    1599,
+    2046,
+    1631
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1845,
+    156,
+    1957,
+    174
+   ]
+  },
+  {
+   "class": "text_callout",
+   "polygon": [
+    [
+     1980,
+     1170
+    ],
+    [
+     2144,
+     1218
+    ],
+    [
+     2138,
+     1246
+    ],
+    [
+     1974,
+     1198
+    ]
+   ]
+  },
+  {
+   "class": "text_callout",
+   "polygon": [
+    [
+     1952,
+     1462
+    ],
+    [
+     2114,
+     1488
+    ],
+    [
+     2110,
+     1510
+    ],
+    [
+     1948,
+     1484
+    ]
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1626,
+    173,
+    1653,
+    202
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1487,
+    979,
+    1503,
+    989
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1452,
+    967,
+    1468,
+    977
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1573,
+    1409,
+    1589,
+    1419
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1524,
+    423,
+    1540,
+    433
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1641,
+    134,
+    1657,
+    144
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1614,
+    161,
+    1629,
+    171
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1809,
+    333,
+    1825,
+    343
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    996,
+    753,
+    1012,
+    763
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1021,
+    743,
+    1036,
+    753
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    671,
+    493,
+    686,
+    503
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1053,
+    768,
+    1072,
+    779
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1341,
+    531,
+    1374,
+    540
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1690,
+    223,
+    1723,
+    233
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1774,
+    669,
+    1820,
+    685
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1830,
+    513,
+    1875,
+    529
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1560,
+    526,
+    1581,
+    536
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1541,
+    398,
+    1557,
+    408
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1541,
+    261,
+    1568,
+    271
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1596,
+    186,
+    1617,
+    196
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1734,
+    100,
+    1749,
+    115
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1987,
+    442,
+    2009,
+    455
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    906,
+    592,
+    928,
+    602
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    993,
+    812,
+    1009,
+    822
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1259,
+    791,
+    1275,
+    801
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1620,
+    343,
+    1636,
+    353
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1798,
+    300,
+    1814,
+    310
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1730,
+    498,
+    1745,
+    508
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1741,
+    481,
+    1757,
+    491
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1734,
+    423,
+    1750,
+    433
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1749,
+    442,
+    1765,
+    452
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1775,
+    405,
+    1790,
+    415
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1756,
+    377,
+    1771,
+    387
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1790,
+    354,
+    1806,
+    364
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1808,
+    366,
+    1824,
+    376
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1859,
+    374,
+    1875,
+    384
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1892,
+    411,
+    1908,
+    421
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1921,
+    427,
+    1936,
+    437
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1789,
+    616,
+    1805,
+    626
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1817,
+    619,
+    1833,
+    628
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1901,
+    648,
+    1917,
+    658
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1402,
+    837,
+    1418,
+    846
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1488,
+    525,
+    1504,
+    535
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1241,
+    615,
+    1257,
+    625
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1003,
+    437,
+    1019,
+    447
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    979,
+    468,
+    994,
+    478
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1567,
+    318,
+    1600,
+    328
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1664,
+    323,
+    1680,
+    333
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1670,
+    258,
+    1686,
+    268
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1731,
+    244,
+    1764,
+    254
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1618,
+    422,
+    1634,
+    432
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1077,
+    1584,
+    1233,
+    1611
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1639,
+    905,
+    1731,
+    933
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    975,
+    1021,
+    1067,
+    1048
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    848,
+    686,
+    962,
+    713
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1416,
+    679,
+    1508,
+    707
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2074,
+    1041,
+    2230,
+    1069
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    776,
+    103,
+    1049,
+    125
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    768,
+    838,
+    853,
+    863
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1592,
+    1153,
+    1653,
+    1168
+   ]
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+  "detection": {
+    "per_class": {
+      "title_block": {
+        "n_gt": 19,
+        "tp": 0,
+        "fp": 0,
+        "fn": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "ap50": 0.0,
+        "ap50_95": 0.0
+      },
+      "schedule_table": {
+        "n_gt": 18,
+        "tp": 3,
+        "fp": 118,
+        "fn": 15,
+        "precision": 0.024793388429752067,
+        "recall": 0.16666666666666666,
+        "f1": 0.04316546762589928,
+        "ap50": 0.018275862068965518,
+        "ap50_95": 0.003716475095785441
+      },
+      "legend": {
+        "n_gt": 7,
+        "tp": 0,
+        "fp": 12,
+        "fn": 7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "ap50": 0.0,
+        "ap50_95": 0.0
+      },
+      "notes_block": {
+        "n_gt": 38,
+        "tp": 8,
+        "fp": 521,
+        "fn": 30,
+        "precision": 0.015122873345935728,
+        "recall": 0.21052631578947367,
+        "f1": 0.028218694885361554,
+        "ap50": 0.015051202667301738,
+        "ap50_95": 0.005893872247015335
+      },
+      "text_callout": {
+        "n_gt": 351,
+        "tp": 49,
+        "fp": 348,
+        "fn": 302,
+        "precision": 0.12342569269521411,
+        "recall": 0.1396011396011396,
+        "f1": 0.13101604278074866,
+        "ap50": 0.02489706617053359,
+        "ap50_95": 0.00811822116471186
+      }
+    },
+    "map50": 0.01164482618136017,
+    "map50_95": 0.0035457137015025273,
+    "n_pages": 23
+  },
+  "breakdown": {
+    "lang": {
+      "en": {
+        "n_pages": 13,
+        "map50": 0.014592133164188476,
+        "map50_95": 0.005186760419762881,
+        "callout_recall": 0.12643678160919541
+      },
+      "ja": {
+        "n_pages": 10,
+        "map50": 0.018875076360844862,
+        "map50_95": 0.004882021147366416,
+        "callout_recall": 0.17777777777777778
+      }
+    },
+    "kind": {
+      "scan": {
+        "n_pages": 13,
+        "map50": 0.014592133164188476,
+        "map50_95": 0.005186760419762881,
+        "callout_recall": 0.12643678160919541
+      },
+      "vector": {
+        "n_pages": 10,
+        "map50": 0.018875076360844862,
+        "map50_95": 0.004882021147366416,
+        "callout_recall": 0.17777777777777778
+      }
+    }
+  },
+  "confusion": {
+    "title_block": {
+      "title_block": 0,
+      "schedule_table": 1,
+      "legend": 0,
+      "notes_block": 5,
+      "text_callout": 0,
+      "missed": 13
+    },
+    "schedule_table": {
+      "title_block": 0,
+      "schedule_table": 3,
+      "legend": 0,
+      "notes_block": 1,
+      "text_callout": 0,
+      "missed": 14
+    },
+    "legend": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 0,
+      "notes_block": 1,
+      "text_callout": 1,
+      "missed": 5
+    },
+    "notes_block": {
+      "title_block": 0,
+      "schedule_table": 1,
+      "legend": 0,
+      "notes_block": 8,
+      "text_callout": 0,
+      "missed": 29
+    },
+    "text_callout": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 1,
+      "notes_block": 31,
+      "text_callout": 47,
+      "missed": 272
+    },
+    "background": {
+      "title_block": 0,
+      "schedule_table": 116,
+      "legend": 11,
+      "notes_block": 483,
+      "text_callout": 349,
+      "missed": 0
+    }
+  },
+  "tables": {
+    "gt_tables": 18,
+    "matched_tables": 3,
+    "tables_with_structure": 0,
+    "cell_precision": NaN,
+    "cell_recall": NaN,
+    "cell_f1": NaN,
+    "span_accuracy": NaN,
+    "text_exact": NaN,
+    "header_accuracy": NaN,
+    "exact_grid_rate": 0.0
+  },
+  "timing": {
+    "median_page_s": 9.364306800000122,
+    "mean_page_s": 10.996427956521787
+  },
+  "failures": [],
+  "settings": {
+    "weights": "models/tiles_640.pt",
+    "oracle": false,
+    "tiling": true,
+    "full_pass": true,
+    "tile": 640,
+    "imgsz": 640,
+    "full_imgsz": 1024,
+    "conf": 0.25,
+    "detect_dpi": 150,
+    "tables": true,
+    "data": "data\\real",
+    "split": null
+  }
+}

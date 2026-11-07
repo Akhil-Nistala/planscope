@@ -1,0 +1,230 @@
+{
+ "input": "raw/en_nara_govisland_bldg550_asbestos_abatement_1f_AA201_1995.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7200,
+ "height": 4823,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    395,
+    1070,
+    1845,
+    2128
+   ]
+  },
+  {
+   "class": "legend",
+   "box": [
+    580,
+    2862,
+    1640,
+    3565
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    5550,
+    520,
+    6822,
+    2882
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    5605,
+    2910,
+    5975,
+    3112
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    5608,
+    3146,
+    6648,
+    3352
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    5475,
+    3432,
+    6935,
+    4600
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    4655,
+    4332,
+    5262,
+    4575
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2697,
+    1408,
+    2792,
+    1468
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2346,
+    1762,
+    2445,
+    1821
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2850,
+    1865,
+    2944,
+    1923
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2400,
+    2450,
+    2501,
+    2508
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2578,
+    2679,
+    2672,
+    2740
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3531,
+    3174,
+    3623,
+    3237
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4243,
+    3112,
+    4344,
+    3176
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4503,
+    3159,
+    4598,
+    3221
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4674,
+    2992,
+    4769,
+    3051
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5146,
+    3154,
+    5241,
+    3216
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4296,
+    3329,
+    4387,
+    3391
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3274,
+    3715,
+    3379,
+    3782
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3951,
+    3712,
+    4038,
+    3774
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4759,
+    3696,
+    4854,
+    3758
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4996,
+    3696,
+    5094,
+    3760
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5259,
+    3693,
+    5351,
+    3755
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5200,
+    420,
+    5430,
+    580
+   ]
+  }
+ ]
+}

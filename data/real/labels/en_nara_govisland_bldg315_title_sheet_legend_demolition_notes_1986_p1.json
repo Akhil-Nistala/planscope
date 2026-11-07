@@ -1,0 +1,59 @@
+{
+ "input": "raw/en_nara_govisland_bldg315_title_sheet_legend_demolition_notes_1986.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7606,
+ "height": 4896,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    355,
+    1205,
+    1740,
+    3375
+   ]
+  },
+  {
+   "class": "legend",
+   "box": [
+    1740,
+    1205,
+    3107,
+    3115
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    3310,
+    1350,
+    4195,
+    2295
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    3175,
+    3205,
+    4362,
+    3900
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    345,
+    3900,
+    7075,
+    4530
+   ]
+  }
+ ]
+}

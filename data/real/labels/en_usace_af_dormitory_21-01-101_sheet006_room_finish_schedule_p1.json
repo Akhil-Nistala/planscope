@@ -1,0 +1,50 @@
+{
+ "input": "raw/en_usace_af_dormitory_21-01-101_sheet006_room_finish_schedule.jpeg",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 3555,
+ "height": 2360,
+ "dpi": 600,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "title_block",
+   "box": [
+    2702,
+    1554,
+    3293,
+    2123
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    417,
+    192,
+    2638,
+    1943
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    2662,
+    304,
+    3060,
+    460
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    457,
+    1939,
+    1031,
+    1969
+   ]
+  }
+ ]
+}

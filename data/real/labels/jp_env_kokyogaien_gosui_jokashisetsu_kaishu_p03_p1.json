@@ -1,0 +1,59 @@
+{
+ "input": "raw/jp_env_kokyogaien_gosui_jokashisetsu_kaishu_p03.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2482,
+ "height": 1755,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    74,
+    41,
+    661,
+    1611
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    657,
+    41,
+    1242,
+    1611
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    1238,
+    41,
+    1823,
+    1611
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    1819,
+    41,
+    2406,
+    1611
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    2075,
+    1604,
+    2406,
+    1715
+   ]
+  }
+ ]
+}

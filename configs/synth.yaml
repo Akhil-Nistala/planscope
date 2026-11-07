@@ -34,4 +34,6 @@ scan:
   noise_sigma: [3.0, 12.0]
   blur_prob: 0.7
 
-save_pdf: false                # true keeps the source PDF of vector/outlined sheets (router evaluation; ~+25% disk)
+# Source PDFs of vector/outlined sheets: true / false / a list of splits. The test split's PDFs are
+# needed for end-to-end evaluation (eval/evaluate.py runs the real pipeline on them); all PDFs ~ +25% disk.
+save_pdf: [test]

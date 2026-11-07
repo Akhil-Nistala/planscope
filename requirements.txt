@@ -1,4 +1,4 @@
-# Milestone 1 (router, rendering, schema, demo). Training deps (ultralytics, sahi, torch) are added in M3.
+# Core pipeline (router, rendering, schema, tables, demo) + synthetic data generator.
 pymupdf==2.1
 numpy==2.5.4
 pillow==13.0.0
@@ -7,3 +7,19 @@ PyYAML==6.0.3
 jsonschema==4.26.0
 pytest==9.2.0
 streamlit==1.66.1
+
+# Layout detector (YOLO11-OBB). CPU wheels; for a GPU use the matching CUDA index instead:
+#   pip install torch==2.15.0 torchvision==0.29.2 --index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+torchvision==0.29.2
+# Ultralytics itself must be installed WITHOUT its dependencies, because it pulls in `opencv-python`,
+# which clashes with `opencv-python-headless` above (both provide cv2):
+#   pip install --no-deps ultralytics==8.4.202
+# Its remaining runtime dependencies:
+matplotlib==3.11.2
+polars==2.1.0
+psutil==7.2.2
+requests==2.34.2
+ultralytics-thop==2.2.5
+ultralytics-platform==0.1.103
+nvidia-ml-py==13.615.71

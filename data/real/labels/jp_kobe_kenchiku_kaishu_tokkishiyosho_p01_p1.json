@@ -1,0 +1,32 @@
+{
+ "input": "raw/jp_kobe_kenchiku_kaishu_tokkishiyosho_p01.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2481,
+ "height": 1754,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    1257,
+    119,
+    2404,
+    1604
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    70,
+    522,
+    1228,
+    1151
+   ]
+  }
+ ]
+}

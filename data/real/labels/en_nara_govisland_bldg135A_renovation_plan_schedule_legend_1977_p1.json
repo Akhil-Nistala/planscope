@@ -1,0 +1,221 @@
+{
+ "input": "raw/en_nara_govisland_bldg135A_renovation_plan_schedule_legend_1977.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7808,
+ "height": 4896,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "title_block",
+   "box": [
+    5805,
+    3485,
+    7340,
+    4470
+   ]
+  },
+  {
+   "class": "legend",
+   "box": [
+    4497,
+    268,
+    5958,
+    1822
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    2732,
+    3492,
+    4486,
+    3910
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    826,
+    3253,
+    2238,
+    4295
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1502,
+    283,
+    2110,
+    385
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1452,
+    388,
+    2123,
+    554
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1467,
+    541,
+    2106,
+    615
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2404,
+    307,
+    3195,
+    455
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2378,
+    487,
+    2919,
+    560
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3290,
+    655,
+    3987,
+    834
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1621,
+    734,
+    2029,
+    801
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2119,
+    1191,
+    2504,
+    1308
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1496,
+    1300,
+    1712,
+    1363
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    840,
+    1654,
+    1248,
+    1802
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1868,
+    1779,
+    2364,
+    1853
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1382,
+    2146,
+    1935,
+    2213
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3253,
+    1477,
+    3654,
+    1586
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3777,
+    1556,
+    4355,
+    1693
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3316,
+    1761,
+    3549,
+    1870
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2765,
+    1982,
+    3029,
+    2143
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3749,
+    2004,
+    4282,
+    2170
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2776,
+    2260,
+    3024,
+    2393
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3169,
+    2282,
+    3619,
+    2388
+   ]
+  }
+ ]
+}

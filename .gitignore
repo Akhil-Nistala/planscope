@@ -7,6 +7,12 @@ runs/
 wandb/
 data/samples/
 data/synth/
-data/real/
+data/real/raw/
+data/real/previews/
 *.pt
+!models/planscope_obb.pt
 *.onnx
+data/synth_tiles/
+eval/results/*/pred/
+*.log
+logs/

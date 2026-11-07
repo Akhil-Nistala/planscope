@@ -1,0 +1,221 @@
+{
+  "detection": {
+    "per_class": {
+      "title_block": {
+        "n_gt": 46,
+        "tp": 46,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "ap50": 1.0,
+        "ap50_95": 1.0
+      },
+      "schedule_table": {
+        "n_gt": 150,
+        "tp": 150,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "ap50": 1.0,
+        "ap50_95": 1.0
+      },
+      "legend": {
+        "n_gt": 81,
+        "tp": 81,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "ap50": 1.0,
+        "ap50_95": 1.0
+      },
+      "notes_block": {
+        "n_gt": 113,
+        "tp": 113,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "ap50": 1.0,
+        "ap50_95": 1.0
+      },
+      "text_callout": {
+        "n_gt": 1406,
+        "tp": 1406,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "ap50": 1.0,
+        "ap50_95": 1.0
+      }
+    },
+    "map50": 1.0,
+    "map50_95": 1.0,
+    "n_pages": 46
+  },
+  "breakdown": {
+    "mode": {
+      "outlined": {
+        "n_pages": 9,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      },
+      "scan": {
+        "n_pages": 17,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      },
+      "vector": {
+        "n_pages": 20,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      }
+    },
+    "lang": {
+      "en": {
+        "n_pages": 14,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      },
+      "ja": {
+        "n_pages": 32,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      }
+    },
+    "sheet_size": {
+      "A1": {
+        "n_pages": 8,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      },
+      "A2": {
+        "n_pages": 13,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      },
+      "A3": {
+        "n_pages": 25,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      }
+    },
+    "layout": {
+      "plan_only": {
+        "n_pages": 11,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      },
+      "plan_side": {
+        "n_pages": 28,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": 1.0
+      },
+      "schedule_sheet": {
+        "n_pages": 7,
+        "map50": 1.0,
+        "map50_95": 1.0,
+        "callout_recall": NaN
+      }
+    }
+  },
+  "confusion": {
+    "title_block": {
+      "title_block": 46,
+      "schedule_table": 0,
+      "legend": 0,
+      "notes_block": 0,
+      "text_callout": 0,
+      "missed": 0
+    },
+    "schedule_table": {
+      "title_block": 0,
+      "schedule_table": 150,
+      "legend": 0,
+      "notes_block": 0,
+      "text_callout": 0,
+      "missed": 0
+    },
+    "legend": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 81,
+      "notes_block": 0,
+      "text_callout": 0,
+      "missed": 0
+    },
+    "notes_block": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 0,
+      "notes_block": 113,
+      "text_callout": 0,
+      "missed": 0
+    },
+    "text_callout": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 0,
+      "notes_block": 0,
+      "text_callout": 1406,
+      "missed": 0
+    },
+    "background": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 0,
+      "notes_block": 0,
+      "text_callout": 0,
+      "missed": 0
+    }
+  },
+  "tables": {
+    "gt_tables": 150,
+    "matched_tables": 150,
+    "tables_with_structure": 150,
+    "cell_precision": 0.9723908644116797,
+    "cell_recall": 0.8975316877918612,
+    "cell_f1": 0.9334628460417678,
+    "span_accuracy": 1.0,
+    "text_exact": 1.0,
+    "header_accuracy": 1.0,
+    "exact_grid_rate": 0.86
+  },
+  "timing": {
+    "median_page_s": 1.1534122499870136,
+    "mean_page_s": 2.1863091608671392
+  },
+  "failures": [],
+  "settings": {
+    "weights": null,
+    "oracle": true,
+    "tiling": true,
+    "full_pass": true,
+    "tile": 640,
+    "imgsz": 1024,
+    "full_imgsz": 1024,
+    "conf": 0.25,
+    "detect_dpi": 150,
+    "tables": true,
+    "data": "data\\synth",
+    "split": "test"
+  }
+}

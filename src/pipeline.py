@@ -22,6 +22,7 @@ from .detect import Detection, Detector, build_detector
 from .document import IMAGE_SUFFIXES, PDF_SUFFIXES, PageData, Word, load_pages
 from .router import Route
 from .schema import SCHEMA_VERSION, validate_output
+from .table import recognize_table
 
 log = logging.getLogger(__name__)
 
@@ -53,14 +54,21 @@ def _r(v: float) -> float:
     return round(float(v), 2)
 
 
-def region_record(idx: int, det: Detection, page: PageData) -> dict[str, Any]:
-    """Build a schema ``region`` from a detection (table structure is added in Milestone 5)."""
+def region_record(idx: int, det: Detection, page: PageData, tables: bool = False) -> dict[str, Any]:
+    """Build a schema ``region`` from a detection; ``tables`` runs structure recognition on schedules."""
     polygon = [[_r(x), _r(y)] for x, y in det.polygon]
-    if page.route is Route.VECTOR:
+    vector = page.route is Route.VECTOR
+    if vector:
         text: str | None = " ".join(w.text for w in words_in_polygon(page.words, det.polygon))
         source = "vector"
     else:
         text, source = None, "needs_ocr"
+    table = None
+    if tables and det.cls == "schedule_table":
+        try:
+            table = recognize_table(page.image, det.polygon, page.words if vector else None, dpi=page.dpi)
+        except Exception:  # a failed table must not lose the page; the region is still reported
+            log.exception("page %d region r%d: table recognition failed", page.page, idx)
     return {
         "id": f"r{idx}",
         "class": det.cls,
@@ -68,12 +76,12 @@ def region_record(idx: int, det: Detection, page: PageData) -> dict[str, Any]:
         "polygon": polygon,
         "text": text,
         "text_source": source,
-        "table": None,
+        "table": table,
     }
 
 
-def page_record(page: PageData, detections: list[Detection]) -> dict[str, Any]:
-    """Build a schema ``page`` object."""
+def page_record(page: PageData, detections: list[Detection], tables: bool = False) -> dict[str, Any]:
+    """Build a schema ``page`` object (``tables``: recognise schedule-table structure)."""
     return {
         "page": page.page,
         "route": page.route.value,
@@ -86,7 +94,7 @@ def page_record(page: PageData, detections: list[Detection]) -> dict[str, Any]:
             {"text": w.text, "bbox": [_r(v) for v in w.bbox], "block": w.block, "line": w.line}
             for w in page.words
         ],
-        "regions": [region_record(i + 1, d, page) for i, d in enumerate(detections)],
+        "regions": [region_record(i + 1, d, page, tables) for i, d in enumerate(detections)],
         "timings": {k: round(v, 4) for k, v in page.timings.items()},
     }
 
@@ -101,13 +109,16 @@ def process_document(
 
     Returns the validated output dict and (if ``keep_images``) the rendered page images.
     """
-    detector = detector or build_detector(cfg.detector.kind)
+    detector = detector or build_detector(cfg.detector)
     pages, images = [], []
     for page in load_pages(path, cfg):
         t0 = time.perf_counter()
-        dets = detector.detect(page.image)
+        dets = detector.detect(page.image, page.dpi)
         page.timings["detect_s"] = time.perf_counter() - t0
-        pages.append(page_record(page, dets))
+        t1 = time.perf_counter()
+        rec = page_record(page, dets, tables=cfg.tables.enabled)
+        rec["timings"]["regions_s"] = round(time.perf_counter() - t1, 4)
+        pages.append(rec)
         if keep_images:
             images.append(page.image)
     doc = {"schema_version": SCHEMA_VERSION, "document": Path(path).name, "pages": pages}
@@ -134,7 +145,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING,
                         format="%(levelname)s %(name)s: %(message)s")
     cfg = load_config(args.config)
-    detector = build_detector(cfg.detector.kind)
+    detector = build_detector(cfg.detector)
     args.out.mkdir(parents=True, exist_ok=True)
 
     for f in _collect_inputs(args.input):

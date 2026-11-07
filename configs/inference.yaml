@@ -19,4 +19,22 @@ images:
   default_dpi: null           # null -> output "dpi": null in JSON
 
 detector:
-  kind: "null"                # "null" until Milestone 3 (YOLO11-OBB). Produces no regions.
+  kind: yolo_obb              # "yolo_obb" (src/detect.py) or "null" (no regions; pipeline still runs)
+  weights: models/planscope_obb.pt   # committed model (see README -> Results); retrain with training/train.py
+  imgsz: 640                  # inference size when tiling is disabled
+  conf: 0.25
+  iou: 0.5
+  detect_dpi: 150             # pages are resampled to the training scale before detection
+  device: cpu
+  max_det: 1000
+  tiling:
+    enabled: true
+    tile: 640                 # = training tile size
+    overlap: 0.25
+    full_pass: true           # plus one whole-sheet pass for regions larger than a tile
+    full_imgsz: 1024
+    merge_iou: 0.5
+    merge_ios: 0.6
+
+tables:
+  enabled: true               # structure recognition on detected schedule tables (src/table.py)

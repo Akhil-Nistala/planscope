@@ -1,0 +1,68 @@
+{
+ "input": "raw/jp_env_kyotogyoen_nakayamatei_koshibei_kaishu_p13.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2481,
+ "height": 1754,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "schedule_table",
+   "box": [
+    1832,
+    177,
+    2386,
+    549
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    1845,
+    557,
+    2384,
+    613
+   ]
+  },
+  {
+   "class": "legend",
+   "box": [
+    2135,
+    1437,
+    2377,
+    1471
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    67,
+    185,
+    252,
+    232
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    327,
+    449,
+    565,
+    499
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    2036,
+    1485,
+    2427,
+    1715
+   ]
+  }
+ ]
+}

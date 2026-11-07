@@ -1,0 +1,14 @@
+{
+  "name": "full_640",
+  "base_model": "yolo11n-obb.pt (COCO-pretrained)",
+  "imgsz": 640,
+  "batch": 4,
+  "device": "cpu (4 cores)",
+  "threads": 4,
+  "data": "data/synth/dataset.yaml (whole sheets, 320 train / 40 val)",
+  "schedule": "chunked on CPU: 1 epoch (warmup 1) + 3 x 2 epochs continued from the previous best, warmup 0; fraction 0.5 (first 160 train sheets)",
+  "epochs_total": 7,
+  "val_map50": 0.878,
+  "val_map50_95": 0.687,
+  "val_set": "40 synthetic val sheets"
+}

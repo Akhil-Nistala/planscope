@@ -1,0 +1,59 @@
+{
+ "input": "raw/jp_env_kyotogyoen_nakayamatei_koshibei_kaishu_p02.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2481,
+ "height": 1754,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    52,
+    40,
+    668,
+    1694
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    664,
+    40,
+    1264,
+    1694
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    1260,
+    40,
+    1860,
+    1694
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    1856,
+    40,
+    2427,
+    1461
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    2036,
+    1464,
+    2427,
+    1694
+   ]
+  }
+ ]
+}

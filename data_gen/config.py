@@ -48,7 +48,11 @@ class SynthConfig:
                                                                       "oblique": 0.15})
     oblique_range_deg: list[float] = field(default_factory=lambda: [10.0, 60.0])
     scan: ScanConfig = field(default_factory=ScanConfig)
-    save_pdf: bool = True
+    save_pdf: bool | list[str] = True  # True/False, or the splits to keep PDFs for (e.g. ["test"])
+
+    def keeps_pdf(self, split: str) -> bool:
+        """Whether the source PDF of a vector/outlined sheet in ``split`` is written."""
+        return split in self.save_pdf if isinstance(self.save_pdf, list) else bool(self.save_pdf)
 
     def validate(self) -> None:
         """Reject unknown categories and unusable weights early (before spawning workers)."""
@@ -69,6 +73,8 @@ class SynthConfig:
             raise ValueError(f"dpi: no DPI for modes {sorted(missing)}")
         if self.n_sheets < 1:
             raise ValueError("n_sheets must be >= 1")
+        if isinstance(self.save_pdf, list) and set(self.save_pdf) - set(SPLITS):
+            raise ValueError(f"save_pdf: unknown splits {sorted(set(self.save_pdf) - set(SPLITS))}")
 
 
 def load_synth_config(path: str | Path | None = None) -> SynthConfig:

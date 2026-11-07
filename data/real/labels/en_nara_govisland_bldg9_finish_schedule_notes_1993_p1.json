@@ -1,0 +1,41 @@
+{
+ "input": "raw/en_nara_govisland_bldg9_finish_schedule_notes_1993.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7200,
+ "height": 4841,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "schedule_table",
+   "box": [
+    1295,
+    495,
+    4612,
+    4485
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    4875,
+    520,
+    6312,
+    1305
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    5380,
+    3725,
+    6952,
+    4658
+   ]
+  }
+ ]
+}

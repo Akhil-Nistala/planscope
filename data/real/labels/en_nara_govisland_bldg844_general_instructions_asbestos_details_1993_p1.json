@@ -1,0 +1,149 @@
+{
+ "input": "raw/en_nara_govisland_bldg844_general_instructions_asbestos_details_1993.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7518,
+ "height": 4896,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    712,
+    355,
+    4915,
+    4662
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    5148,
+    345,
+    7090,
+    1605
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    5838,
+    3210,
+    7344,
+    4712
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5620,
+    1818,
+    5930,
+    1875
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5602,
+    1922,
+    5762,
+    1980
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5647,
+    2005,
+    5891,
+    2061
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5650,
+    2233,
+    5948,
+    2288
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    6374,
+    2080,
+    6898,
+    2178
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    6374,
+    2190,
+    7246,
+    2328
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    6374,
+    2413,
+    7103,
+    2548
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    6374,
+    2560,
+    7175,
+    2740
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5357,
+    2428,
+    5673,
+    2526
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5869,
+    2638,
+    5993,
+    2725
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5456,
+    2788,
+    5561,
+    2883
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5609,
+    2928,
+    5966,
+    2983
+   ]
+  }
+ ]
+}

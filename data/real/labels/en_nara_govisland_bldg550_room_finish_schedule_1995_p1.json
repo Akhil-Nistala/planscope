@@ -1,0 +1,68 @@
+{
+ "input": "raw/en_nara_govisland_bldg550_room_finish_schedule_1995.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7200,
+ "height": 4820,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "schedule_table",
+   "box": [
+    212,
+    160,
+    2495,
+    3280
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    2505,
+    180,
+    4745,
+    4590
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    4790,
+    285,
+    7042,
+    812
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    4778,
+    812,
+    7042,
+    3402
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    4745,
+    3405,
+    5532,
+    4525
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    5536,
+    3436,
+    7038,
+    4638
+   ]
+  }
+ ]
+}

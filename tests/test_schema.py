@@ -84,7 +84,7 @@ class _FixedDetector:
     def __init__(self, cls: str = "schedule_table") -> None:
         self.cls = cls
 
-    def detect(self, image: np.ndarray) -> list[Detection]:
+    def detect(self, image: np.ndarray, dpi: int | None = None) -> list[Detection]:
         h, w = image.shape[:2]
         return [Detection(self.cls, 0.9, [(0, 0), (w, 0), (w, h * 0.3), (0, h * 0.3)])]
 

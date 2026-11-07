@@ -1,0 +1,572 @@
+{
+ "input": "raw/en_nara_govisland_brickvillage_ph3_unit_plans_room_finish_1983.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7559,
+ "height": 4896,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "title_block",
+   "box": [
+    5517,
+    3618,
+    7031,
+    4521
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    2518,
+    3511,
+    4044,
+    4529
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    5925,
+    2920,
+    6905,
+    3435
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    4303,
+    3344,
+    5090,
+    3540
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1315,
+    945,
+    1519,
+    1017
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1478,
+    1270,
+    1726,
+    1339
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2419,
+    547,
+    2779,
+    615
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2412,
+    687,
+    2786,
+    757
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4255,
+    574,
+    4673,
+    637
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4255,
+    659,
+    4676,
+    742
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3983,
+    852,
+    4166,
+    915
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3979,
+    902,
+    4206,
+    998
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3979,
+    978,
+    4315,
+    1192
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3047,
+    974,
+    3256,
+    1030
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3462,
+    1158,
+    3615,
+    1218
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3073,
+    1302,
+    3186,
+    1358
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3320,
+    1328,
+    3530,
+    1385
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3147,
+    1381,
+    3304,
+    1441
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3294,
+    1424,
+    3570,
+    1483
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2683,
+    1377,
+    2893,
+    1481
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2627,
+    1464,
+    2887,
+    1664
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3143,
+    1601,
+    3488,
+    1696
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3957,
+    1338,
+    4193,
+    1446
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3974,
+    1818,
+    4229,
+    1962
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4838,
+    1012,
+    5162,
+    1081
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5382,
+    1015,
+    5704,
+    1084
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4780,
+    1438,
+    5056,
+    1506
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5448,
+    1438,
+    5728,
+    1506
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5166,
+    1527,
+    5409,
+    1593
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4603,
+    1565,
+    4739,
+    1699
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5191,
+    1738,
+    5404,
+    1799
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5226,
+    1824,
+    5381,
+    1906
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5363,
+    1699,
+    5503,
+    1753
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5827,
+    1618,
+    6178,
+    1753
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    6416,
+    1504,
+    6706,
+    1646
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5769,
+    1773,
+    5982,
+    1862
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1147,
+    2022,
+    1418,
+    2124
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    474,
+    2492,
+    930,
+    2623
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    460,
+    2751,
+    987,
+    2850
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2265,
+    2530,
+    2686,
+    2623
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2251,
+    2630,
+    2805,
+    2728
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2390,
+    2784,
+    2750,
+    2847
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2397,
+    2913,
+    2750,
+    2972
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3086,
+    2019,
+    3261,
+    2074
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3071,
+    2130,
+    3173,
+    2183
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3261,
+    2288,
+    3711,
+    2353
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4304,
+    2835,
+    4702,
+    2902
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4304,
+    2957,
+    4725,
+    3020
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4601,
+    1887,
+    4732,
+    2031
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5773,
+    2004,
+    6068,
+    2124
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5773,
+    2137,
+    6084,
+    2287
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4910,
+    2251,
+    5228,
+    2318
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5171,
+    2343,
+    5521,
+    2412
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4913,
+    2516,
+    5228,
+    2581
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4746,
+    2405,
+    4826,
+    2463
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4112,
+    3757,
+    4575,
+    3855
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2179,
+    3311,
+    2595,
+    3407
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1908,
+    3375,
+    2079,
+    3432
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1584,
+    3600,
+    1914,
+    3848
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1116,
+    3903,
+    1485,
+    4019
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1756,
+    4251,
+    1879,
+    4308
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1987,
+    4241,
+    2516,
+    4387
+   ]
+  }
+ ]
+}

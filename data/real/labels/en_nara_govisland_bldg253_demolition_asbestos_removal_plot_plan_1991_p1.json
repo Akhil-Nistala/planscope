@@ -1,0 +1,452 @@
+{
+ "input": "raw/en_nara_govisland_bldg253_demolition_asbestos_removal_plot_plan_1991.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7542,
+ "height": 4896,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "title_block",
+   "box": [
+    5490,
+    3680,
+    7060,
+    4620
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1125,
+    1295,
+    1360,
+    1370
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1540,
+    1422,
+    1718,
+    1515
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2765,
+    1352,
+    3080,
+    1515
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1813,
+    1591,
+    2390,
+    1648
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1388,
+    1690,
+    1778,
+    1871
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2602,
+    1675,
+    3325,
+    1788
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2485,
+    1919,
+    3250,
+    2035
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1216,
+    1860,
+    1284,
+    2137
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1316,
+    2380,
+    1375,
+    2531
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    743,
+    2388,
+    1109,
+    2531
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1407,
+    2479,
+    1609,
+    2621
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4337,
+    1035,
+    4615,
+    1134
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4968,
+    1116,
+    5196,
+    1219
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3484,
+    1592,
+    3645,
+    1650
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3745,
+    1678,
+    4448,
+    1780
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4769,
+    1701,
+    5079,
+    1784
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4168,
+    1909,
+    4502,
+    1975
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5182,
+    2124,
+    5648,
+    2292
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5106,
+    2270,
+    5162,
+    2410
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5501,
+    2380,
+    5654,
+    2434
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5103,
+    2450,
+    5159,
+    2598
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5454,
+    2476,
+    5641,
+    2536
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5182,
+    2738,
+    5648,
+    2952
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2531,
+    2333,
+    3645,
+    2537
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1219,
+    2712,
+    1278,
+    2956
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1910,
+    3118,
+    2874,
+    3184
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    582,
+    3279,
+    960,
+    3379
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1665,
+    3207,
+    2174,
+    3351
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1747,
+    3329,
+    2031,
+    3393
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2535,
+    3269,
+    3315,
+    3370
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1782,
+    3618,
+    2262,
+    3679
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    851,
+    3706,
+    1340,
+    3768
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2741,
+    3635,
+    2971,
+    3777
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3549,
+    2758,
+    3974,
+    2905
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4217,
+    2799,
+    4572,
+    2957
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4573,
+    2791,
+    4903,
+    2921
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3635,
+    3116,
+    4318,
+    3308
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4396,
+    3122,
+    4949,
+    3188
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3773,
+    3343,
+    4042,
+    3412
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4347,
+    3437,
+    5128,
+    3503
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3793,
+    3606,
+    4231,
+    3666
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1554,
+    3991,
+    2137,
+    4130
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5954,
+    3290,
+    6107,
+    3366
+   ]
+  },
+  {
+   "class": "text_callout",
+   "polygon": [
+    [
+     6224,
+     2382
+    ],
+    [
+     6345,
+     2258
+    ],
+    [
+     6384,
+     2294
+    ],
+    [
+     6263,
+     2418
+    ]
+   ]
+  },
+  {
+   "class": "text_callout",
+   "polygon": [
+    [
+     5850,
+     2760
+    ],
+    [
+     6066,
+     2533
+    ],
+    [
+     6110,
+     2574
+    ],
+    [
+     5890,
+     2803
+    ]
+   ]
+  }
+ ]
+}

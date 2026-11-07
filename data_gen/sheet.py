@@ -280,9 +280,9 @@ def generate_sheet(index: int, cfg: SynthConfig, vocab: dict, router_cfg: Router
     meta = {
         **asdict(spec), "font": font.label, "width": W, "height": H,
         "image": f"images/{spec.split}/{spec.id}.{ext}", "label": f"labels/{spec.split}/{spec.id}.txt",
-        "gt": f"gt/{spec.id}.json", "pdf": f"pdf/{spec.id}.pdf" if (pdf_bytes and cfg.save_pdf) else None,
+        "gt": f"gt/{spec.id}.json", "pdf": f"pdf/{spec.id}.pdf" if (pdf_bytes and cfg.keeps_pdf(spec.split)) else None,
         "router": router_info, "scan": scan_params, "class_counts": counts,
         "regions": [{"id": f"r{i + 1}", "class": reg.cls, "text": reg.text,
                      "table": _truth_table(reg.table) if reg.table else None} for i, (reg, _) in enumerate(kept)],
     }
-    return SheetResult(spec, image, ext, pdf_bytes if cfg.save_pdf else None, labels, gt, meta)
+    return SheetResult(spec, image, ext, pdf_bytes if cfg.keeps_pdf(spec.split) else None, labels, gt, meta)

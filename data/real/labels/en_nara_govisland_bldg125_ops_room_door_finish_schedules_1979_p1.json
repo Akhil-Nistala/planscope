@@ -1,0 +1,437 @@
+{
+ "input": "raw/en_nara_govisland_bldg125_ops_room_door_finish_schedules_1979.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7800,
+ "height": 4896,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "schedule_table",
+   "box": [
+    818,
+    455,
+    5970,
+    1432
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    815,
+    2112,
+    3178,
+    2640
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    5772,
+    1705,
+    7292,
+    3335
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    5785,
+    3537,
+    7296,
+    4493
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    4006,
+    4030,
+    4548,
+    4180
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4020,
+    1630,
+    4335,
+    1725
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4412,
+    1703,
+    5022,
+    1757
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5268,
+    1637,
+    5610,
+    1757
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4155,
+    1802,
+    4250,
+    1842
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4015,
+    1974,
+    4310,
+    2077
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5231,
+    2053,
+    5401,
+    2145
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4262,
+    2153,
+    4442,
+    2202
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4190,
+    2324,
+    4645,
+    2379
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3625,
+    1945,
+    3885,
+    2045
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1004,
+    3170,
+    1371,
+    3223
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1026,
+    3241,
+    1454,
+    3350
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1082,
+    3498,
+    1282,
+    3545
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1086,
+    3596,
+    1279,
+    3646
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1354,
+    3620,
+    1558,
+    3748
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1671,
+    3446,
+    2246,
+    3642
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1879,
+    3674,
+    2127,
+    3724
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2289,
+    3502,
+    2485,
+    3548
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2286,
+    3601,
+    2457,
+    3650
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2455,
+    3173,
+    2961,
+    3325
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3105,
+    3702,
+    3311,
+    3802
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3082,
+    3128,
+    3505,
+    3175
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3105,
+    3197,
+    3575,
+    3300
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3531,
+    2951,
+    3895,
+    3205
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4071,
+    2930,
+    4570,
+    3019
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4203,
+    3045,
+    4435,
+    3097
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4703,
+    2903,
+    4975,
+    3007
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4706,
+    3030,
+    4844,
+    3079
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5081,
+    2960,
+    5450,
+    3007
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5070,
+    3011,
+    5510,
+    3145
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5066,
+    3191,
+    5477,
+    3315
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5051,
+    3346,
+    5282,
+    3400
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4701,
+    3206,
+    4970,
+    3255
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3531,
+    3301,
+    3950,
+    3454
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4706,
+    3331,
+    4949,
+    3382
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4703,
+    3406,
+    5005,
+    3505
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3528,
+    3476,
+    3815,
+    3574
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4491,
+    3530,
+    4582,
+    3577
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4703,
+    3530,
+    5065,
+    3633
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3528,
+    3601,
+    3760,
+    3700
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4706,
+    3653,
+    5005,
+    3705
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4698,
+    3703,
+    4940,
+    3754
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5399,
+    4119,
+    5629,
+    4204
+   ]
+  }
+ ]
+}

@@ -16,6 +16,7 @@ import numpy as np
 import streamlit as st
 
 from src.config import load_config
+from src.detect import build_detector
 from src.pipeline import process_document
 
 ROOT = Path(__file__).resolve().parent
@@ -60,20 +61,48 @@ def overlay(img: np.ndarray, page: dict, show_words: bool, max_w: int = 1800) ->
     return out
 
 
+MODELS = ROOT / "models"
+
+
+@st.cache_resource(show_spinner=False)
+def get_detector(weights: str, tiling: bool, full_pass: bool, conf: float):
+    """Load the detector once per setting (model load is the slow part)."""
+    cfg = load_config()
+    cfg.detector.kind = "yolo_obb" if weights else "null"
+    if weights:
+        cfg.detector.weights = weights
+    cfg.detector.tiling.enabled, cfg.detector.tiling.full_pass, cfg.detector.conf = tiling, full_pass, conf
+    return build_detector(cfg.detector)
+
+
 @st.cache_data(show_spinner=False)
-def run(path_str: str, min_words: int, min_ratio: float, _mtime: float) -> tuple[dict, list[np.ndarray]]:
-    """Run the pipeline (cached per file + thresholds)."""
+def run(path_str: str, min_words: int, min_ratio: float, weights: str, tiling: bool, full_pass: bool,
+        conf: float, _mtime: float) -> tuple[dict, list[np.ndarray]]:
+    """Run the pipeline (cached per file + settings)."""
     cfg = load_config()
     cfg.router.min_words = min_words
     cfg.router.min_valid_char_ratio = min_ratio
-    return process_document(path_str, cfg, keep_images=True)
+    return process_document(path_str, cfg, get_detector(weights, tiling, full_pass, conf), keep_images=True)
+
+
+def table_rows(table: dict) -> list[dict]:
+    """Table cells as display rows (merged cells shown in their first row)."""
+    ncols = max((sum(c.get("col_span", 1) for c in r["cells"]) for r in table["rows"]), default=0)
+    out = []
+    for r in table["rows"][1:]:
+        texts = [c["text"] if c["text"] is not None else "(needs OCR)" for c in r["cells"]]
+        heads = [h if h is not None else f"col{i + 1}" for i, h in enumerate(table["headers"])]
+        if len(texts) < len(heads):  # a merged cell from a row above covers the first column(s)
+            texts = ["↑"] * (len(heads) - len(texts)) + texts
+        out.append(dict(zip(heads[:ncols] or heads, texts)))
+    return out
 
 
 ensure_samples()
 st.title("PlanScope — drawing layout & table analysis")
 st.caption("Stage 1 of an asbestos-material screening pipeline: find where material information lives on a "
-           "drawing and emit structured JSON. **Milestone 1:** input router, rendering, output schema. "
-           "Layout detection (YOLO11-OBB) and table structure arrive in later milestones — regions are empty for now.")
+           "drawing (title blocks, finish schedules, notes, legends, callouts) and emit schema-valid JSON with "
+           "table structure. Text comes from the PDF layer on vector pages; raster pages are flagged for OCR.")
 
 with st.sidebar:
     st.header("Input")
@@ -85,7 +114,16 @@ with st.sidebar:
     cfg0 = load_config()
     min_words = st.slider("min_words", 0, 200, cfg0.router.min_words)
     min_ratio = st.slider("min_valid_char_ratio", 0.0, 1.0, cfg0.router.min_valid_char_ratio, 0.01)
-    show_words = st.checkbox("Show text-layer word boxes", True)
+    show_words = st.checkbox("Show text-layer word boxes", False)
+    st.header("Layout detector")
+    weights_opts = sorted(p.name for p in MODELS.glob("*.pt")) if MODELS.exists() else []
+    default_w = Path(cfg0.detector.weights).name
+    wsel = st.selectbox("Model", weights_opts + ["(none)"],
+                        index=weights_opts.index(default_w) if default_w in weights_opts else len(weights_opts))
+    weights = str(MODELS / wsel) if wsel != "(none)" else ""
+    tiling = st.checkbox("Tiled inference", cfg0.detector.tiling.enabled)
+    full_pass = st.checkbox("+ full-sheet pass", cfg0.detector.tiling.full_pass, disabled=not tiling)
+    conf = st.slider("confidence", 0.05, 0.9, cfg0.detector.conf, 0.05)
 
 if up is not None:
     tmp = Path(tempfile.gettempdir()) / f"pa_upload_{up.name}"
@@ -101,7 +139,8 @@ with st.expander("Sample gallery", expanded=False):
         cols[i % 3].image(str(f), caption=f.stem, width="stretch")
 
 try:
-    doc, images = run(str(path), min_words, min_ratio, path.stat().st_mtime)
+    with st.spinner("Running the pipeline (detection on CPU can take a few seconds per page)…"):
+        doc, images = run(str(path), min_words, min_ratio, weights, tiling, full_pass, conf, path.stat().st_mtime)
 except Exception as e:  # surface errors in the UI rather than a stack trace
     st.error(f"Failed to process {path.name}: {e}")
     st.stop()
@@ -124,11 +163,23 @@ for page, img in zip(doc["pages"], images):
         else:
             st.write("Image input — no text layer, routed to OCR.")
         t = page.get("timings", {})
-        st.write(f"route {t.get('route_s', 0) * 1000:.0f} ms · render {t.get('render_s', 0) * 1000:.0f} ms")
-        if page["words"]:
-            st.write("**First words:**")
-            st.dataframe([{"text": w["text"], "bbox": [round(v) for v in w["bbox"]]} for w in page["words"][:40]],
-                         height=300, width="stretch")
+        st.write(f"route {t.get('route_s', 0) * 1000:.0f} ms · render {t.get('render_s', 0) * 1000:.0f} ms · "
+                 f"detect {t.get('detect_s', 0) * 1000:.0f} ms · regions {t.get('regions_s', 0) * 1000:.0f} ms")
+        counts = {}
+        for reg in page["regions"]:
+            counts[reg["class"]] = counts.get(reg["class"], 0) + 1
+        st.write("**Regions:**", ", ".join(f"{k} × {v}" for k, v in sorted(counts.items())) or "none")
+    for reg in page["regions"]:
+        if reg["table"]:
+            tb = reg["table"]
+            canon = ", ".join(f"{h}→{c}" for h, c in zip(tb["headers"], tb["canonical_headers"]) if h and c)
+            with st.expander(f"Table {reg['id']} · {len(tb['rows']) - 1} rows · {canon or 'headers need OCR'}"):
+                st.dataframe(table_rows(tb), width="stretch")
+    other = [r for r in page["regions"] if not r["table"]]
+    if other:
+        with st.expander(f"Region list ({len(other)} non-table regions)"):
+            st.dataframe([{"id": r["id"], "class": r["class"], "conf": r["conf"],
+                           "text": (r["text"] or "(needs OCR)")[:120]} for r in other], width="stretch")
 
 js = json.dumps(doc, ensure_ascii=False, indent=2)
 st.download_button("Download JSON", js, file_name=f"{Path(doc['document']).stem}.json", mime="application/json")

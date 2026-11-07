@@ -1,0 +1,248 @@
+{
+ "input": "raw/jp_env_kokyogaien_gosui_jokashisetsu_kaishu_p06.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2482,
+ "height": 1755,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "title_block",
+   "box": [
+    2082,
+    1587,
+    2411,
+    1708
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1260,
+    74,
+    1518,
+    120
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1260,
+    446,
+    1395,
+    492
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1931,
+    348,
+    1960,
+    366
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1741,
+    494,
+    1834,
+    512
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1741,
+    589,
+    1834,
+    607
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1726,
+    674,
+    1814,
+    692
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    416,
+    353,
+    454,
+    367
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    392,
+    285,
+    431,
+    302
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    548,
+    325,
+    585,
+    342
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    753,
+    489,
+    790,
+    507
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    565,
+    567,
+    604,
+    584
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    405,
+    1028,
+    442,
+    1045
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    405,
+    1076,
+    442,
+    1094
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    382,
+    1301,
+    419,
+    1318
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    464,
+    1301,
+    501,
+    1318
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    547,
+    1301,
+    584,
+    1318
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    630,
+    1301,
+    667,
+    1318
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    712,
+    1301,
+    749,
+    1318
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    795,
+    1301,
+    832,
+    1318
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    382,
+    1400,
+    419,
+    1417
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    464,
+    1400,
+    501,
+    1417
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    547,
+    1400,
+    584,
+    1417
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    630,
+    1400,
+    667,
+    1417
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    712,
+    1400,
+    749,
+    1417
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    795,
+    1400,
+    832,
+    1417
+   ]
+  }
+ ]
+}

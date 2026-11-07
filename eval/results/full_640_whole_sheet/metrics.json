@@ -1,0 +1,221 @@
+{
+  "detection": {
+    "per_class": {
+      "title_block": {
+        "n_gt": 46,
+        "tp": 28,
+        "fp": 6,
+        "fn": 18,
+        "precision": 0.8235294117647058,
+        "recall": 0.6086956521739131,
+        "f1": 0.7,
+        "ap50": 0.5960272780048378,
+        "ap50_95": 0.4757874130802639
+      },
+      "schedule_table": {
+        "n_gt": 150,
+        "tp": 143,
+        "fp": 25,
+        "fn": 7,
+        "precision": 0.8511904761904762,
+        "recall": 0.9533333333333334,
+        "f1": 0.89937106918239,
+        "ap50": 0.9438895616349008,
+        "ap50_95": 0.7278720475811075
+      },
+      "legend": {
+        "n_gt": 81,
+        "tp": 67,
+        "fp": 5,
+        "fn": 14,
+        "precision": 0.9305555555555556,
+        "recall": 0.8271604938271605,
+        "f1": 0.8758169934640523,
+        "ap50": 0.8207068181876087,
+        "ap50_95": 0.45922346541294123
+      },
+      "notes_block": {
+        "n_gt": 113,
+        "tp": 108,
+        "fp": 24,
+        "fn": 5,
+        "precision": 0.8181818181818182,
+        "recall": 0.9557522123893806,
+        "f1": 0.8816326530612245,
+        "ap50": 0.9438345972337352,
+        "ap50_95": 0.6900923073600953
+      },
+      "text_callout": {
+        "n_gt": 1406,
+        "tp": 1082,
+        "fp": 293,
+        "fn": 324,
+        "precision": 0.7869090909090909,
+        "recall": 0.7695590327169275,
+        "f1": 0.7781373606616325,
+        "ap50": 0.7063843928477358,
+        "ap50_95": 0.24694691218469314
+      }
+    },
+    "map50": 0.8021685295817637,
+    "map50_95": 0.5199844291238201,
+    "n_pages": 46
+  },
+  "breakdown": {
+    "mode": {
+      "outlined": {
+        "n_pages": 9,
+        "map50": 0.8137933853863835,
+        "map50_95": 0.5574248263379106,
+        "callout_recall": 0.7649253731343284
+      },
+      "scan": {
+        "n_pages": 17,
+        "map50": 0.7799038204642135,
+        "map50_95": 0.5050249339432424,
+        "callout_recall": 0.7019748653500898
+      },
+      "vector": {
+        "n_pages": 20,
+        "map50": 0.827464991834541,
+        "map50_95": 0.5368616985643021,
+        "callout_recall": 0.8364888123924269
+      }
+    },
+    "lang": {
+      "en": {
+        "n_pages": 14,
+        "map50": 0.7749651611349516,
+        "map50_95": 0.5131208145201553,
+        "callout_recall": 0.7612293144208038
+      },
+      "ja": {
+        "n_pages": 32,
+        "map50": 0.8152971746037629,
+        "map50_95": 0.527795413946914,
+        "callout_recall": 0.7731434384537131
+      }
+    },
+    "sheet_size": {
+      "A1": {
+        "n_pages": 8,
+        "map50": 0.6732230683194549,
+        "map50_95": 0.4270428018079427,
+        "callout_recall": 0.5591054313099042
+      },
+      "A2": {
+        "n_pages": 13,
+        "map50": 0.8232794521300313,
+        "map50_95": 0.533113972408426,
+        "callout_recall": 0.792
+      },
+      "A3": {
+        "n_pages": 25,
+        "map50": 0.859014262022247,
+        "map50_95": 0.5696384436300267,
+        "callout_recall": 0.8617200674536256
+      }
+    },
+    "layout": {
+      "plan_only": {
+        "n_pages": 11,
+        "map50": 0.8466532430225986,
+        "map50_95": 0.6009304962499161,
+        "callout_recall": 0.7699757869249395
+      },
+      "plan_side": {
+        "n_pages": 28,
+        "map50": 0.7866489592925301,
+        "map50_95": 0.5115303851169759,
+        "callout_recall": 0.7693856998992951
+      },
+      "schedule_sheet": {
+        "n_pages": 7,
+        "map50": 0.7980706301940641,
+        "map50_95": 0.5530350613658856,
+        "callout_recall": NaN
+      }
+    }
+  },
+  "confusion": {
+    "title_block": {
+      "title_block": 27,
+      "schedule_table": 3,
+      "legend": 0,
+      "notes_block": 0,
+      "text_callout": 0,
+      "missed": 16
+    },
+    "schedule_table": {
+      "title_block": 0,
+      "schedule_table": 142,
+      "legend": 0,
+      "notes_block": 4,
+      "text_callout": 0,
+      "missed": 4
+    },
+    "legend": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 67,
+      "notes_block": 0,
+      "text_callout": 0,
+      "missed": 14
+    },
+    "notes_block": {
+      "title_block": 0,
+      "schedule_table": 1,
+      "legend": 1,
+      "notes_block": 108,
+      "text_callout": 0,
+      "missed": 3
+    },
+    "text_callout": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 0,
+      "notes_block": 0,
+      "text_callout": 1082,
+      "missed": 324
+    },
+    "background": {
+      "title_block": 7,
+      "schedule_table": 22,
+      "legend": 4,
+      "notes_block": 20,
+      "text_callout": 293,
+      "missed": 0
+    }
+  },
+  "tables": {
+    "gt_tables": 150,
+    "matched_tables": 143,
+    "tables_with_structure": 44,
+    "cell_precision": 0.8058608058608059,
+    "cell_recall": 0.15033483668170014,
+    "cell_f1": 0.2533978346003225,
+    "span_accuracy": 0.9990909090909091,
+    "text_exact": 0.9524590163934427,
+    "header_accuracy": 0.6,
+    "exact_grid_rate": 0.013986013986013986
+  },
+  "timing": {
+    "median_page_s": 1.0250514999997904,
+    "mean_page_s": 1.325112965217356
+  },
+  "failures": [],
+  "settings": {
+    "weights": "models/full_640.pt",
+    "oracle": false,
+    "tiling": false,
+    "full_pass": true,
+    "tile": 640,
+    "imgsz": 640,
+    "full_imgsz": 640,
+    "conf": 0.25,
+    "detect_dpi": 150,
+    "tables": true,
+    "data": "data\\synth",
+    "split": "test"
+  }
+}

@@ -1,0 +1,23 @@
+{
+ "input": "raw/jp_env_kokyogaien_gosui_jokashisetsu_kaishu_p02.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2482,
+ "height": 1755,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "schedule_table",
+   "box": [
+    180,
+    207,
+    2299,
+    1468
+   ]
+  }
+ ]
+}

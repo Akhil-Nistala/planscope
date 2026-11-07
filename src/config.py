@@ -38,10 +38,38 @@ class ImageConfig:
 
 
 @dataclass
-class DetectorConfig:
-    """Layout detector selection (filled in from Milestone 3)."""
+class TilingConfig:
+    """Sliding-window inference (see src/tiling.py)."""
 
-    kind: str = "null"
+    enabled: bool = True
+    tile: int = 640               # tile side in pixels at detect_dpi (= training tile size)
+    overlap: float = 0.25
+    full_pass: bool = True        # also run once on the whole (downscaled) sheet, for regions larger than a tile
+    full_imgsz: int = 1024
+    merge_iou: float = 0.5        # same class, IoU >= this -> duplicate
+    merge_ios: float = 0.6        # same class, intersection-over-smaller >= this -> pieces of one object
+
+
+@dataclass
+class DetectorConfig:
+    """Layout detector selection and inference settings."""
+
+    kind: str = "null"            # "null" | "yolo_obb"
+    weights: str = "models/planscope_obb.pt"  # relative to the repo root unless absolute
+    imgsz: int = 1024             # inference size when tiling is disabled
+    conf: float = 0.25
+    iou: float = 0.5              # NMS IoU inside the model
+    detect_dpi: int | None = 150  # pages are resampled to this DPI before detection (training scale)
+    device: str = "cpu"
+    max_det: int = 1000
+    tiling: TilingConfig = field(default_factory=TilingConfig)
+
+
+@dataclass
+class TablesConfig:
+    """Table structure recognition on detected schedule tables (src/table.py)."""
+
+    enabled: bool = True
 
 
 @dataclass
@@ -53,6 +81,7 @@ class PipelineConfig:
     render: RenderConfig = field(default_factory=RenderConfig)
     images: ImageConfig = field(default_factory=ImageConfig)
     detector: DetectorConfig = field(default_factory=DetectorConfig)
+    tables: TablesConfig = field(default_factory=TablesConfig)
 
 
 def _build(cls: type, data: dict[str, Any]) -> Any:

@@ -1,0 +1,32 @@
+{
+ "input": "raw/jp_env_kyotogyoen_nakayamatei_koshibei_kaishu_p01.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2481,
+ "height": 1754,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "schedule_table",
+   "box": [
+    894,
+    508,
+    1610,
+    1239
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    2006,
+    1494,
+    2397,
+    1725
+   ]
+  }
+ ]
+}

@@ -1,0 +1,374 @@
+{
+ "input": "raw/en_nara_govisland_bldg333_interior_alterations_finish_schedule_1987.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 4818,
+ "height": 3712,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "title_block",
+   "box": [
+    3842,
+    2244,
+    4666,
+    2960
+   ]
+  },
+  {
+   "class": "schedule_table",
+   "box": [
+    849,
+    210,
+    2333,
+    2306
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    844,
+    2372,
+    1473,
+    2580
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    2387,
+    234,
+    2676,
+    360
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    4027,
+    444,
+    4393,
+    506
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    3440,
+    852,
+    3760,
+    960
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2942,
+    230,
+    3030,
+    260
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2942,
+    254,
+    3170,
+    286
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    277,
+    3223,
+    358
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2387,
+    420,
+    2648,
+    466
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2942,
+    434,
+    3083,
+    466
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2387,
+    562,
+    2483,
+    593
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    562,
+    3206,
+    608
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2387,
+    644,
+    2623,
+    705
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    699,
+    3133,
+    730
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    754,
+    3133,
+    786
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2387,
+    807,
+    2648,
+    888
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    817,
+    3200,
+    861
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    867,
+    3220,
+    913
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2387,
+    914,
+    2483,
+    943
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    912,
+    3203,
+    958
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4027,
+    234,
+    4163,
+    265
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4024,
+    264,
+    4223,
+    308
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4024,
+    302,
+    4218,
+    350
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3587,
+    440,
+    3718,
+    470
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3587,
+    472,
+    3786,
+    503
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3442,
+    570,
+    3686,
+    631
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4024,
+    642,
+    4243,
+    688
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3442,
+    699,
+    3693,
+    743
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4027,
+    712,
+    4226,
+    743
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3442,
+    770,
+    3778,
+    830
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4024,
+    842,
+    4226,
+    888
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4024,
+    912,
+    4216,
+    958
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2937,
+    1232,
+    3203,
+    1280
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2467,
+    1284,
+    2683,
+    1330
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2937,
+    1292,
+    3158,
+    1338
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    1342,
+    3046,
+    1373
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2940,
+    1374,
+    3133,
+    1406
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2467,
+    1407,
+    2676,
+    1456
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2937,
+    1404,
+    3208,
+    1468
+   ]
+  }
+ ]
+}

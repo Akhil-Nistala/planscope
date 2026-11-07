@@ -1,0 +1,32 @@
+{
+ "input": "raw/jp_kobe_ishiwata_shori_tokkishiyosho_p01-04.pdf",
+ "page": 1,
+ "attrs": {
+  "lang": "ja",
+  "kind": "vector"
+ },
+ "width": 2481,
+ "height": 1754,
+ "dpi": 150,
+ "route": "vector",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    72,
+    319,
+    1221,
+    1666
+   ]
+  },
+  {
+   "class": "notes_block",
+   "box": [
+    1259,
+    94,
+    2409,
+    1675
+   ]
+  }
+ ]
+}

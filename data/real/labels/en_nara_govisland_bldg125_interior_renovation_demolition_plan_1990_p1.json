@@ -1,0 +1,203 @@
+{
+ "input": "raw/en_nara_govisland_bldg125_interior_renovation_demolition_plan_1990.tiff",
+ "page": 1,
+ "attrs": {
+  "lang": "en",
+  "kind": "scan"
+ },
+ "width": 7807,
+ "height": 4896,
+ "dpi": 200,
+ "route": "raster",
+ "regions": [
+  {
+   "class": "notes_block",
+   "box": [
+    4437,
+    220,
+    5752,
+    875
+   ]
+  },
+  {
+   "class": "legend",
+   "box": [
+    6414,
+    220,
+    7252,
+    600
+   ]
+  },
+  {
+   "class": "title_block",
+   "box": [
+    4510,
+    3713,
+    7365,
+    4697
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1838,
+    1252,
+    2118,
+    1329
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1838,
+    1437,
+    2145,
+    1510
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1838,
+    1573,
+    2230,
+    1655
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1160,
+    1733,
+    1452,
+    1811
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    1838,
+    2257,
+    2158,
+    2335
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3190,
+    1220,
+    3485,
+    1302
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3158,
+    2208,
+    3436,
+    2398
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3158,
+    2398,
+    3503,
+    2480
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3905,
+    1224,
+    4185,
+    1300
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3690,
+    1706,
+    3978,
+    1782
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5088,
+    1791,
+    5735,
+    1895
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    5088,
+    1924,
+    5566,
+    1970
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4176,
+    2293,
+    4657,
+    2343
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4176,
+    2397,
+    4641,
+    2479
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    3108,
+    2869,
+    3433,
+    2953
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4836,
+    2939,
+    5161,
+    3021
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    2396,
+    3089,
+    2761,
+    3173
+   ]
+  },
+  {
+   "class": "text_callout",
+   "box": [
+    4562,
+    3097,
+    5011,
+    3181
+   ]
+  }
+ ]
+}

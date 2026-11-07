@@ -1,0 +1,175 @@
+{
+  "detection": {
+    "per_class": {
+      "title_block": {
+        "n_gt": 19,
+        "tp": 1,
+        "fp": 5,
+        "fn": 18,
+        "precision": 0.16666666666666666,
+        "recall": 0.05263157894736842,
+        "f1": 0.08,
+        "ap50": 0.02631578947368421,
+        "ap50_95": 0.021052631578947368
+      },
+      "schedule_table": {
+        "n_gt": 18,
+        "tp": 9,
+        "fp": 120,
+        "fn": 9,
+        "precision": 0.06976744186046512,
+        "recall": 0.5,
+        "f1": 0.12244897959183673,
+        "ap50": 0.10528074866310161,
+        "ap50_95": 0.049494033471974654
+      },
+      "legend": {
+        "n_gt": 7,
+        "tp": 0,
+        "fp": 10,
+        "fn": 7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "ap50": 0.0,
+        "ap50_95": 0.0
+      },
+      "notes_block": {
+        "n_gt": 38,
+        "tp": 10,
+        "fp": 75,
+        "fn": 28,
+        "precision": 0.11764705882352941,
+        "recall": 0.2631578947368421,
+        "f1": 0.16260162601626016,
+        "ap50": 0.13593861179673536,
+        "ap50_95": 0.05969304961295807
+      },
+      "text_callout": {
+        "n_gt": 351,
+        "tp": 20,
+        "fp": 46,
+        "fn": 331,
+        "precision": 0.30303030303030304,
+        "recall": 0.05698005698005698,
+        "f1": 0.09592326139088729,
+        "ap50": 0.031703865567421594,
+        "ap50_95": 0.01177412768516777
+      }
+    },
+    "map50": 0.05984780310018856,
+    "map50_95": 0.028402768469809575,
+    "n_pages": 23
+  },
+  "breakdown": {
+    "lang": {
+      "en": {
+        "n_pages": 13,
+        "map50": 0.107354490591769,
+        "map50_95": 0.052887418434311585,
+        "callout_recall": 0.06130268199233716
+      },
+      "ja": {
+        "n_pages": 10,
+        "map50": 0.01037851037851038,
+        "map50_95": 0.005550671550671551,
+        "callout_recall": 0.044444444444444446
+      }
+    },
+    "kind": {
+      "scan": {
+        "n_pages": 13,
+        "map50": 0.107354490591769,
+        "map50_95": 0.052887418434311585,
+        "callout_recall": 0.06130268199233716
+      },
+      "vector": {
+        "n_pages": 10,
+        "map50": 0.01037851037851038,
+        "map50_95": 0.005550671550671551,
+        "callout_recall": 0.044444444444444446
+      }
+    }
+  },
+  "confusion": {
+    "title_block": {
+      "title_block": 0,
+      "schedule_table": 11,
+      "legend": 0,
+      "notes_block": 4,
+      "text_callout": 0,
+      "missed": 4
+    },
+    "schedule_table": {
+      "title_block": 0,
+      "schedule_table": 8,
+      "legend": 1,
+      "notes_block": 2,
+      "text_callout": 0,
+      "missed": 7
+    },
+    "legend": {
+      "title_block": 0,
+      "schedule_table": 1,
+      "legend": 0,
+      "notes_block": 2,
+      "text_callout": 0,
+      "missed": 4
+    },
+    "notes_block": {
+      "title_block": 0,
+      "schedule_table": 2,
+      "legend": 0,
+      "notes_block": 10,
+      "text_callout": 1,
+      "missed": 25
+    },
+    "text_callout": {
+      "title_block": 0,
+      "schedule_table": 0,
+      "legend": 0,
+      "notes_block": 2,
+      "text_callout": 20,
+      "missed": 329
+    },
+    "background": {
+      "title_block": 6,
+      "schedule_table": 107,
+      "legend": 9,
+      "notes_block": 65,
+      "text_callout": 45,
+      "missed": 0
+    }
+  },
+  "tables": {
+    "gt_tables": 18,
+    "matched_tables": 9,
+    "tables_with_structure": 0,
+    "cell_precision": NaN,
+    "cell_recall": NaN,
+    "cell_f1": NaN,
+    "span_accuracy": NaN,
+    "text_exact": NaN,
+    "header_accuracy": NaN,
+    "exact_grid_rate": 0.0
+  },
+  "timing": {
+    "median_page_s": 1.02176210000016,
+    "mean_page_s": 1.0995956913043499
+  },
+  "failures": [],
+  "settings": {
+    "weights": "models/full_640.pt",
+    "oracle": false,
+    "tiling": false,
+    "full_pass": true,
+    "tile": 640,
+    "imgsz": 640,
+    "full_imgsz": 640,
+    "conf": 0.25,
+    "detect_dpi": 150,
+    "tables": true,
+    "data": "data\\real",
+    "split": null
+  }
+}
