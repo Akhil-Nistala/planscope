@@ -26,7 +26,7 @@ drawing lists and other ruled data tables count as `schedule_table`.
 
 ## How the labels were made
 
-Single-pass annotation by an AI assistant (Claude) with `eval/label_tool.py`: coordinates read from gridded,
+Single-pass annotation by an AI assistant with `eval/label_tool.py`: coordinates read from gridded,
 zoomed renders and checked on overlays. **No human review and no second annotator**, so treat the real-set
 numbers as indicative: boxes are approximate (about ±1% of the page), and on very dense plans not every
 callout is labelled (the agents labelled at most ~40 per sheet; see the per-page notes in `DATA.md`). Table

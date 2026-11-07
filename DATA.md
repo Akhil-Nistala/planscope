@@ -65,7 +65,7 @@ sourcing report in the README). English sheets are all bilevel 1970s–1990s sca
 vector PDFs, two of them A3 spec documents rather than drawings. 23 pages is small: per-class numbers on the
 real set have wide confidence intervals.
 
-**How the labels were made.** Single-pass annotation by an AI assistant (Claude) using `eval/label_tool.py`
+**How the labels were made.** Single-pass annotation by an AI assistant using `eval/label_tool.py`
 (gridded/zoomed renders, overlays checked; Japanese vector pages snapped to text-layer coordinates). No human
 review, no second annotator. Conventions applied consistently across annotators: a table's own title row is
 excluded even when drawn inside its frame; abbreviation lists without symbols are notes_block; drawing lists

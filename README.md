@@ -63,8 +63,8 @@ python -m eval.evaluate --real data/real --weights models/tiles_640.pt --name re
 ```
 
 The committed results came from 2–3 epoch chunks: each chunk continued from the previous weights with
-`--model models/<name>.pt --warmup 0`, and each tile chunk drew a fresh `--subset-seed`. This is because
-Claude Code's background jobs are stopped on an 8 GB machine.
+`--model models/<name>.pt --warmup 0`, and each tile chunk drew a fresh `--subset-seed`. This is because long-running
+background jobs get stopped on an 8 GB machine.
 
 ## Router (vector fast path)
 
@@ -174,7 +174,7 @@ Rule-based, because finish schedules are ruled grids:
 | Kobe City (政府標準利用規約) | 3 | vector PDFs | Renovation / asbestos specification pages |
 
 They contain 433 labelled regions: 351 text callouts, 38 notes blocks, 19 title blocks, 18 schedule tables
-and 7 legends. Labels follow the synthetic labelling rules. They were drawn by AI annotators (Claude agents)
+and 7 legends. Labels follow the synthetic labelling rules. They were drawn by AI annotators
 with `eval/label_tool.py`, which reads coordinates off gridded, zoomed renders and checks them on overlays,
 and have not been reviewed by a human.
 
